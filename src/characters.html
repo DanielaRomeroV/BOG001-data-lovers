@@ -31,54 +31,48 @@
     </header>
 
 
-    <div class="section">
-        <h1>Characters</h1>
+    <div class="container">
+        <div class="section">
+            <h1>Characters</h1>
+        </div>
+
+        <section>
+            <div class="search-input">
+                <input type="search" class="site-search color" name="q">
+                <button class="button">
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+            <div class="filters">
+                <select class="filter-input color margin-t-1">
+                    <option>Order A-Z</option>
+                    <option>Order Z-A</option>
+                </select>
+
+                <select class="filter-input color margin-t-1">
+                    <option>Humans</option>
+                    <option>Vampire</option>
+                    <option>Disease</option>
+                    <option>Unknown</option>
+                    <option>Animal</option>
+                    <option>Robot</option>
+                    <option>Humanoid</option>
+                    <option>Alien</option>
+                    <option>Cronenberg</option>
+                </select>
+            </div>
+        </section>
+
+        <section class="grid" id="characters-container">
+
+        </section>
     </div>
-
-    <section class="filters">
-        <div class="search-input">
-            <input type="search" class="site-search color" name="q">
-            <button class="button">
-                <i class="fas fa-search"></i>
-            </button>
-        </div>
-        <div class="Filters1">
-            <select class="filter-input color margin-t-1">
-                <option>Order A-Z</option>
-                <option>Order Z-A</option>
-            </select>
-
-            <select class="filter-input color margin-t-1">
-                <option>Humans</option>
-                <option>Vampire</option>
-                <option>Disease</option>
-                <option>Unknown</option>
-                <option>Animal</option>
-                <option>Robot</option>
-                <option>Humanoid</option>
-                <option>Alien</option>
-                <option>Cronenberg</option>
-            </select>
-        </div>
-    </section>
-
-    <section class="Cards" id="personajitos">    
-
-    </section>
-
-
-
-
-
-
-    
-
     <footer class="footer">
         <div class="RyM-icon">
             <img src="images/image.png" alt="img" />
         </div>
         <div id="boxblack">
-            <p class="text margin-t-1">@ All rights reserved</p>
+            <p class="text-f margin-t-1">@ All rights reserved</p>
             <div class="Icons-socialMedia">
                 <i class="fab fa-twitter-square"></i>
                 <i class="fab fa-facebook-square"></i>
@@ -88,13 +82,8 @@
         </div>
     </footer>
 
-
-    
-    <script src="data.js"></script>    
-    <script src="main.js"></script>
-
+    <script src="data.js" type="module"></script>
+    <script src="main.js" type="module"></script>
 </body>
-
-
 
 </html>
