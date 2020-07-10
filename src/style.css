@@ -3,11 +3,22 @@
   margin-top: 1rem;
 }
 
+.margin-t-2 {
+  margin-top: 2rem;
+}
+
+.margin-b-1 {
+  margin-bottom: 1rem;
+}
+
+.margin-b-2 {
+  margin-bottom: 2rem;
+}
+
 /*---------------*/
 html {
   font-size: 16px;
 }
-
 
 * {
   margin: 0;
@@ -37,7 +48,10 @@ header {
   align-items: center;
   width: 100%;
 }
-
+.color {
+  border: 2px solid #11b0c8;
+  border-radius: 5px;
+}
 .Icon-menu {
   display: flex;
   color: white;
@@ -99,6 +113,18 @@ header {
   max-width: 400px;
 }
 
+#banner-mobile-image {
+  display: block;
+}
+
+#banner-tablet-image {
+  display: none;
+}
+
+#banner-desktop-image {
+  display: none;
+}
+
 .button {
   border: none;
   color: white;
@@ -126,108 +152,130 @@ header {
 
 /*Slider styles*/
 
-.funfacts{
-	min-height: 100vh;
-	background-color: white;
-	float: left;
-	width: 100%;
-	padding:100px 15px;
+.funfacts {
+  min-height: 100vh;
+  background-color: white;
+  float: left;
+  width: 100%;
+  padding: 100px 15px;
 }
 
-.container{
-	max-width: 1170px;
-	margin: auto;
+.container {
+  max-width: 1170px;
+  margin: auto;
 }
-.funfacts .title{
-	margin-bottom:60px
+.funfacts .title {
+  margin-bottom: 60px;
 }
-.funfacts .title h1{
-	text-align: center;
-	color:  #11B0C8;
-	text-transform: uppercase;
-	font-size: 36px;
-	margin:0;
-}
-
-.funfacts .slider{
- border:1px solid #333333;
- max-width: 600px;
- margin: auto;
- text-align: center;
- padding:30px;
- background: black;
-}
-.funfacts .slider .slide{
-	display: none;
-}
-.funfacts .slider .slide.active{
-	
-	display: block;
-	animation: slide 1s ease;
-}
-@keyframes slide{
-	0%{
-		opacity:0;
-		transform: translateX(-15px);
-	}
-	100%{
-	   opacity:1;
-		transform: translateX(0px);	
-	}
-}
-.funfacts .slider p{
-	font-size:18px;
-	color:#ffffff;
-	word-spacing: 2px;
+.funfacts .title h1 {
+  text-align: center;
+  color: #11b0c8;
+  text-transform: uppercase;
+  font-size: 36px;
+  margin: 0;
 }
 
-
-.funfacts .slider-indicator{
-	text-align: center;
-	padding-top:30px;
+.funfacts .slider {
+  border: 1px solid #333333;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  padding: 30px;
+  background: black;
 }
-.funfacts .slider-indicator img{
-	max-height:50px;
-	max-width:50px;
-	border-radius:50%;
-	display: inline-block;
-	margin:0 8px;
-	opacity:0.2;
-	border:4px solid #fff;
-	cursor: pointer;
-	transition: opacity 1s ease;
-
+.funfacts .slider .slide {
+  display: none;
 }
-.funfacts .slider-indicator img.active{
-	opacity:1;
+.funfacts .slider .slide.active {
+  display: block;
+  animation: slide 1s ease;
+}
+@keyframes slide {
+  0% {
+    opacity: 0;
+    transform: translateX(-15px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+.funfacts .slider p {
+  font-size: 18px;
+  color: #ffffff;
+  word-spacing: 2px;
+}
+
+.funfacts .slider-indicator {
+  text-align: center;
+  padding-top: 30px;
+}
+.funfacts .slider-indicator img {
+  max-height: 50px;
+  max-width: 50px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0 8px;
+  opacity: 0.2;
+  border: 4px solid #fff;
+  cursor: pointer;
+  transition: opacity 1s ease;
+}
+.funfacts .slider-indicator img.active {
+  opacity: 1;
 }
 
 /*footer*/
 
 #boxblack {
   background: black;
+}
+
+#boxblack p {
+  color: white;
+  text-align: center;
+}
+
+.RyM-icon {
+  width: 5%;
+  display: block;
+  margin: auto;
+}
+
+.Icons-socialMedia {
+  color: white;
+  cursor: pointer;
+  margin-top: auto;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+/*Tablet--------------------*/
+@media screen and (min-width: 768px) {
+  #banner-mobile-image {
+    display: none;
   }
 
-  #boxblack p {
-    color: white;
-    text-align: center;
+  #banner-tablet-image {
+    display: block;
+  }
+}
+
+/* Desktop---------------------- */
+@media screen and (min-width: 1127px) {
+  #banner-mobile-image {
+    display: none;
   }
 
-  .RyM-icon {
-    width: 5%;
-    display:block;
-    margin:auto;
+  #banner-tablet-image {
+    display: none;
   }
 
-
-  .Icons-socialMedia{
-    color:white;
-    cursor: pointer;
-    margin-top: auto;
-    font-size: 1.5rem;
-    text-align: center;
+  #banner-desktop-image {
+    display: block;
   }
-  
+}
+
 @media screen and (min-width: 800px) {
   .content1 {
     display: flex;
