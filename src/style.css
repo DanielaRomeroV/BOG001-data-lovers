@@ -39,7 +39,8 @@ header {
   background: black;
   display: flex;
   flex-direction: column;
-  position: relative;
+  position: fixed;
+  
 }
 
 .main-nav {
@@ -47,6 +48,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  
 }
 .color {
   border: 2px solid #11b0c8;
@@ -71,6 +73,7 @@ header {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
   margin-top: -0.5rem;
   list-style: none;
+  
 }
 
 .main-menu::before {
@@ -164,6 +167,8 @@ header {
   max-width: 1170px;
   margin: auto;
 }
+
+
 .funfacts .title {
   margin-bottom: 60px;
 }

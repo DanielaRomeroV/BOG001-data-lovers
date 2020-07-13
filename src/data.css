@@ -57,11 +57,12 @@ select option {
 
 .column {
   display: flex;
-}
+  }
 
 .card {
   border: 3px solid #11b0c8;
   border-radius: 1.5%;
+
 }
 
 .card-content {
@@ -71,6 +72,8 @@ select option {
 .card-title {
   margin-top: 5%;
 }
+
+
 
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
