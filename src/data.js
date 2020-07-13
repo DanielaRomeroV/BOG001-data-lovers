@@ -1,3 +1,6 @@
+
+
+
 async function getCharacters() {
     let charactersContainer = document.querySelector('#characters-container')
     const response = await fetch('https://rickandmortyapi.com/api/character/?page=1');
