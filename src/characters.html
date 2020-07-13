@@ -36,31 +36,31 @@
             <h1>Characters</h1>
         </div>
 
-        <section>
-            <div class="search-input">
+        <section class="filters margin-b-1 margin-t-1">
+            <div class="search-input margin-b-1">
                 <input type="search" class="site-search color" name="q">
-                <button class="button">
+                <button class="button search">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
-            <div class="filters">
-                <select class="filter-input color margin-t-1">
-                    <option>Order A-Z</option>
-                    <option>Order Z-A</option>
-                </select>
-
-                <select class="filter-input color margin-t-1">
-                    <option>Humans</option>
-                    <option>Vampire</option>
-                    <option>Disease</option>
-                    <option>Unknown</option>
-                    <option>Animal</option>
-                    <option>Robot</option>
-                    <option>Humanoid</option>
-                    <option>Alien</option>
-                    <option>Cronenberg</option>
-                </select>
-            </div>
+            <select class="filter-input color margin-b-1">
+                <option value="order" class="order">Order</option>
+                <option value="a-z">Order A-Z</option>
+                <option value="z-a">Order Z-A</option>
+            </select>
+            <select class="filter-input color margin-b-1">
+                <option value="species">Species</option>
+                <option value="species.Human">Humans</option>
+                <option value="species.Vampire">Vampire</option>
+                <option value="species.Disease">Disease</option>
+                <option value="species.unknown">Unknown</option>
+                <option value="species.Animal">Animal</option>
+                <option value="species.Robot">Robot</option>
+                <option value="species.Humanoid">Humanoid</option>
+                <option value="species.Alien">Alien</option>
+                <option value="species.Cronenberg">Cronenberg</option>
+                <option value="species.Poopybutthole">Poopybutthole</option>
+            </select>
         </section>
 
         <section class="grid" id="characters-container">
