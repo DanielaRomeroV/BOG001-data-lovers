@@ -78,12 +78,7 @@ select option {
 }
 
 
-/*flipcard*/
-
-.grid {
-  
-}
-
+/*flipcard
 .card-container {
   position: relative;
   transform-style: preserve-3d;
@@ -105,11 +100,9 @@ select option {
   transform: rotateY(180deg);
 }
 
-.card-container:hover .card.card-back{
+.card-container:hover .card-container{
   transform: rotateY(180deg);
-}
-
-
+}*/
 
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
