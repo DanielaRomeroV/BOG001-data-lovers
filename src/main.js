@@ -1,8 +1,5 @@
-
 /* menu*/
-
 const buttonMenu = document.querySelector('#main-menu-button');
-
 buttonMenu.addEventListener('click', toggleMenu);
 
 /**
@@ -35,3 +32,4 @@ const indicator=document.querySelector(".slider-indicator").children;
 
      })
  }
+
