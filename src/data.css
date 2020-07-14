@@ -73,6 +73,33 @@ select option {
   margin-top: 5%;
 }
 
+/*flipcard*/
+
+#characters-container {
+  position: relative;
+  width: 300px;
+  height: 350px;
+ transform-style: preserve-3d;
+}
+
+.card-image, .card-content {
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  position: absolute;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.card-content {
+  transform: rotateY(180deg);
+}
+
+.grid:hover .card-image {
+  transform: rotateY(180deg);
+
+}
 
 
 /*Tablet--------------------*/
