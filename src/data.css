@@ -57,13 +57,19 @@ select option {
 
 .column {
   display: flex;
-  }
+}
+
+.column > * {
+  width: 100%;
+}
+/*Flip cards */
 
 .card {
   border: 3px solid #11b0c8;
   border-radius: 1.5%;
-
+  
 }
+
 
 .card-content {
   padding: 1rem;
@@ -73,35 +79,6 @@ select option {
   margin-top: 5%;
 }
 
-/*flipcard*/
-
-#characters-container {
-  position: relative;
-  width: 300px;
-  height: 350px;
- transform-style: preserve-3d;
-}
-
-.card-image, .card-content {
-  width: 200px;
-  height: 200px;
-  top: 0;
-  left: 0;
-  position: absolute;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.card-content {
-  transform: rotateY(180deg);
-}
-
-.grid:hover .card-image {
-  transform: rotateY(180deg);
-
-}
-
-
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
   .filters {
@@ -110,6 +87,7 @@ select option {
 
   .grid > * {
     flex: 1 1 50%;
+    max-width: 50%;
   }
 }
 
@@ -117,5 +95,6 @@ select option {
 @media screen and (min-width: 1127px) {
   .grid > * {
     flex: 1 1 25%;
+    max-width: 25%;
   }
 }
