@@ -69,8 +69,6 @@ select option {
   border-radius: 1.5%;
   
 }
-
-
 .card-content {
   padding: 1rem;
 }
@@ -78,6 +76,20 @@ select option {
 .card-title {
   margin-top: 5%;
 }
+
+
+/*flipcard*/
+
+.card-container {
+
+}
+
+.card-front, .card-back {
+  
+}
+
+
+
 
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
