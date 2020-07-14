@@ -80,14 +80,34 @@ select option {
 
 /*flipcard*/
 
-.card-container {
-
-}
-
-.card-front, .card-back {
+.grid {
   
 }
 
+.card-container {
+  position: relative;
+  transform-style: preserve-3d;
+
+}
+
+.card.card-front, .card.card-back {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  
+}
+
+.card.card-back {
+  transform: rotateY(180deg);
+}
+
+.card-container:hover .card.card-back{
+  transform: rotateY(180deg);
+}
 
 
 
