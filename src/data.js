@@ -72,6 +72,9 @@ function cardCharacter(urlImage, name, status, location, origin, specie) {
         <h3 class="card-title">${name}</h3>
     </div>
 </div>
+</div>
+
+<div class="card-container-back">
 <div class="card card-back">
     <p class="card-description">
         Status: ${status}
