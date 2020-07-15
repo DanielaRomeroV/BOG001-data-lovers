@@ -59,6 +59,11 @@ select option {
   display: flex;
 }
 
+.column > * {
+  width: 100%;
+}
+/*Flip cards */
+
 .card {
   border: 3px solid #11b0c8;
   border-radius: 1.5%;
@@ -72,6 +77,28 @@ select option {
   margin-top: 5%;
 }
 
+/*efecto zoom*/
+
+.card {
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 50ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
+
+}
+
+.card:hover {
+  -webkit-transform: scale(1.12,1.12);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1.12,1.12);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
+
+}
+
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
   .filters {
@@ -80,6 +107,7 @@ select option {
 
   .grid > * {
     flex: 1 1 50%;
+    max-width: 50%;
   }
 }
 
@@ -87,5 +115,6 @@ select option {
 @media screen and (min-width: 1127px) {
   .grid > * {
     flex: 1 1 25%;
+    max-width: 25%;
   }
 }

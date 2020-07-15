@@ -18,6 +18,7 @@
 /*---------------*/
 html {
   font-size: 16px;
+  scroll-behavior: smooth;
 }
 
 * {
@@ -30,6 +31,20 @@ html {
 img {
   width: 100%;
   height: auto;
+}
+
+.loading-indicator {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: bold;
+}
+
+.loading-indicator.active {
+  display: flex;
 }
 
 /*Main menu styles*/
@@ -250,6 +265,17 @@ header {
   text-align: center;
 }
 
+#backTop-button {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  font-size: 3rem;
+  display: flex;
+  padding: 1rem;
+  cursor: pointer;
+  color: #11b0c8;
+}
+
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
   #banner-mobile-image {
@@ -276,22 +302,4 @@ header {
   }
 }
 
-@media screen and (min-width: 800px) {
-  .content1 {
-    display: flex;
-    flex-direction: row-reverse;
-  }
 
-  .img-content1 {
-    width: 70%;
-  }
-
-  .img-content1 img {
-    float: right;
-    width: 400px;
-  }
-
-  .content-fondo img {
-    width: 70%;
-  }
-}
