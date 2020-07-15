@@ -64,7 +64,7 @@ getCharacters();
 function cardCharacter(urlImage, name, status, location, origin, specie) {
     return (
         `
-        
+       
 <div class="card-container">
 <div class="card card-front">
     <img src="${urlImage}" alt="image" class="card-image" />
@@ -75,15 +75,11 @@ function cardCharacter(urlImage, name, status, location, origin, specie) {
 <div class="card card-back">
     <p class="card-description">
         Status: ${status}
-    </p>
-    <p class="card-description">
         Specie: ${specie}
-    </p>
-    <p class="card-description">
         Origin: ${origin}
-    </p>
-    <p class="card-description">
         Current location: ${location}
+    </p> 
+       
     </p>
 </div>
 </div>

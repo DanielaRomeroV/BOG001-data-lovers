@@ -79,30 +79,32 @@ select option {
 
 
 /*flipcard
-.card-container {
+
+.card{
   position: relative;
+  transition:300ms;
   transform-style: preserve-3d;
 
 }
 
-.card.card-front, .card.card-back {
-  width: 100px;
-  height: 100px;
+.card .card-front, .card .card-back{
   position: absolute;
-  top: 0;
-  left: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
-  
+
 }
 
-.card.card-back {
-  transform: rotateY(180deg);
+.card .card-back {
+  transform: rotateY(180sdeg);
+
 }
 
-.card-container:hover .card-container{
-  transform: rotateY(180deg);
-}*/
+
+
+.flipBox:hover ,.flipBoxInner{
+  transform: rotateY(180sdeg);
+}
+
+
 
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
