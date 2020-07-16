@@ -51,35 +51,24 @@ select option {
  }
 
 .grid > * {
-  flex: 1 1 50%;
+  flex: 1 1 100%;
   padding: 1rem;
 }
 
 .maincontainer {
-  display: relative;
+  display: flex;
 }
 
 .maincontainer > * {
   width: 100%;
   
 }
-/*Flip cards */
 
-
-.card-content {
-  padding: 1rem;
-}
-
-.card-title {
-  margin-top: 5%;
-}
-
-
+/*flipcard*/
 
 .loading-indicator {
   margin-top: 350px;
 }
-
 
 #characters-container.grid {
   padding: 10px;
@@ -88,18 +77,13 @@ select option {
   display: relative;
 }
 
-
-/*flip*/
-
-
 .maincontainer{
   width: 300%;
   height: 320px;
   background: none;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  padding: 25px;
+  padding: 60px;
 
 }
 
@@ -125,12 +109,13 @@ select option {
   top: 0;
   left: 0;
   width: 100%;
-  height: 110%;
+  height: 140%;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
   background:  #11b0c8;
   color: white;
+  
 }
 
 .theback{
@@ -150,7 +135,6 @@ select option {
 
 
 .thefront h3, .theback p{
-   padding: 10px;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
@@ -165,30 +149,6 @@ select option {
   text-align: center;
 }
 
-
-
-/*efecto zoom*/
-
-.thefront {
-  -webkit-transform: scale(1,1);
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 50ms;
-  -moz-transform: scale(1,1);
-  -moz-transition-timing-function: ease-out;
-  -moz-transition-duration: 250ms;
-
-}
-
-.thefront:hover {
-  -webkit-transform: scale(1.12,1.12);
-  -webkit-transition-timing-function: ease-out;
-  -webkit-transition-duration: 100ms;
-  -moz-transform: scale(1.12,1.12);
-  -moz-transition-timing-function: ease-out;
-  -moz-transition-duration: 100ms;
-
-}
-
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
   .filters {
@@ -199,6 +159,12 @@ select option {
     flex: 1 1 50%;
     max-width: 50%;
   }
+
+  .thefront {
+    width: 200px;
+    height: 250px;
+  }
+
 }
 
 /* Desktop---------------------- */
@@ -208,10 +174,12 @@ select option {
     max-width: 25%;
   }
 
-  #characters-container.grid {
-    padding: 10rem;
-    margin-left: auto;
-    margin-right: auto;
+  .maincontainer {
+    padding: 20px;
+
   }
 
+  .thefront{
+    width: 100%;
+    height: 110%;
 }
