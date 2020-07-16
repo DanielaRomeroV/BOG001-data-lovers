@@ -48,26 +48,22 @@ select option {
 .grid {
   display: flex;
   flex-wrap: wrap;
-}
+ }
 
 .grid > * {
-  flex: 1 1 100%;
+  flex: 1 1 50%;
   padding: 1rem;
 }
 
-.column {
-  display: flex;
+.maincontainer {
+  display: relative;
 }
 
-.column > * {
+.maincontainer > * {
   width: 100%;
 }
 /*Flip cards */
 
-.card {
-  border: 3px solid #11b0c8;
-  border-radius: 1.5%;
-}
 
 .card-content {
   padding: 1rem;
@@ -77,20 +73,32 @@ select option {
   margin-top: 5%;
 }
 
+
+
 .loading-indicator {
   margin-top: 350px;
 }
+
+
+#characters-container.grid {
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  display: relative;
+}
+
+
 /*flip*/
 
 
 .maincontainer{
-  position: absolute;
-  width: 250px;
+  width: 300%;
   height: 320px;
   background: none;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding: 25px;
 
 }
 
@@ -116,7 +124,7 @@ select option {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 110%;
   border-radius: 10px;
   backface-visibility: hidden;
   overflow: hidden;
@@ -140,17 +148,17 @@ select option {
 }
 
 
-.thefront h1, .theback h1{
-  font-family: 'zilla slab', sans-serif;
-  padding: 30px;
+.thefront h3, .theback p{
+   padding: 10px;
   font-weight: bold;
   font-size: 20px;
   text-align: center;
+  
 }
 
 .thefront p, .theback p{
-  font-family: 'zilla slab', sans-serif;
-  padding: 20px;
+  
+  padding: 15px;
   font-weight: normal;
   font-size: 15px;
   text-align: center;
@@ -198,4 +206,11 @@ select option {
     flex: 1 1 25%;
     max-width: 25%;
   }
+
+  #characters-container.grid {
+    padding: 10rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 }
