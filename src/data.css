@@ -77,6 +77,9 @@ select option {
   margin-top: 5%;
 }
 
+.loading-indicator {
+  margin-top: 350px;
+}
 /*flip*/
 
 
@@ -147,23 +150,11 @@ select option {
 
 .thefront p, .theback p{
   font-family: 'zilla slab', sans-serif;
-  padding: 30px;
+  padding: 20px;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 15px;
   text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

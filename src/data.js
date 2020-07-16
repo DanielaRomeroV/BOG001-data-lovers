@@ -80,8 +80,14 @@ function cardCharacter(urlImage, name, status, location, origin, specie) {
         <div class="theback">
             <p class="card-description">
                 Status: ${status}
+                </p>
+                <p class="card-description">
                    Specie: ${specie}
+                   </p>
+                   <p class="card-description">
                    Origin: ${origin}
+                   </p>
+                   <p class="card-description">
                    Current location: ${location}
             </p></div>
         
