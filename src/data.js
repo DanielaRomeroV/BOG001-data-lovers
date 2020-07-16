@@ -11,6 +11,8 @@ let currentPage = 1;
 // Mantiene un registro de la cantidad de paginas de personajes que tiene la API
 let totalPages = 30;
 
+let charactersContainer = document.querySelector('#characters-container');
+
 /*Scroll to the top */
 const backToTopButton = document.querySelector('#backTop-button');
 backToTopButton.addEventListener("click", () => {
@@ -21,12 +23,13 @@ backToTopButton.addEventListener("click", () => {
     window.scrollTo(0, 0);
 });
 
+let filtersApplied = false;
+
 
 /*get characters*/
 async function getCharacters(page = 1) {
     // Si currentPage es 31 ya no dejará pedir más datos a la API porque quiere decir que llegamos al final y ya pedimos todos los personajes
-    if (currentPage <= totalPages) {
-        let charactersContainer = document.querySelector('#characters-container');
+    if (currentPage <= totalPages && !filtersApplied) {
 
         // Añadimos la clase active a nuestro Loading indicator en el HTML
         loadingIndicator.classList.add('active');
@@ -142,3 +145,37 @@ window.onscroll = function () {
 };
 
 
+
+//Buscador//
+
+const searchForm = document.querySelector('#searchIn');
+const searchButton = document.querySelector('#searchButton');
+
+const filter = async () => {
+
+    if(searchForm.value) {
+        filtersApplied = true;
+    } else {
+        filtersApplied = false;
+    }
+    const response = await fetch(`https://rickandmortyapi.com/api/character/?name=${encodeURIComponent(searchForm.value)}`);
+    const data = await response.json();    
+    console.log(data);
+    charactersContainer.innerHTML = "";
+    data.results.forEach(character =>
+        charactersContainer.innerHTML += cardCharacter(
+            character.image,
+            character.name,
+            character.status,
+            character.location.name,
+            character.origin.name,
+            character.specie
+        )
+    );
+}
+
+searchButton.addEventListener('click', filter)
+
+/*Sort function*/
+
+const listToSort = [ specie ]
