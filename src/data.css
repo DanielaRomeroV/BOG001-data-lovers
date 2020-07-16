@@ -61,6 +61,7 @@ select option {
 
 .maincontainer > * {
   width: 100%;
+  
 }
 /*Flip cards */
 
@@ -168,7 +169,7 @@ select option {
 
 /*efecto zoom*/
 
-.card {
+.thefront {
   -webkit-transform: scale(1,1);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 50ms;
@@ -178,7 +179,7 @@ select option {
 
 }
 
-.card:hover {
+.thefront:hover {
   -webkit-transform: scale(1.12,1.12);
   -webkit-transition-timing-function: ease-out;
   -webkit-transition-duration: 100ms;
