@@ -64,28 +64,26 @@ getCharacters();
 function cardCharacter(urlImage, name, status, location, origin, specie) {
     return (
         `
-       
-<div class="card-container">
-<div class="card card-front">
-    <img src="${urlImage}" alt="image" class="card-image" />
-    <div class="card-content">
-        <h3 class="card-title">${name}</h3>
-    </div>
-</div>
-</div>
-
-<div class="card-container-back">
-<div class="card card-back">
-    <p class="card-description">
-        Status: ${status}
-        Specie: ${specie}
-        Origin: ${origin}
-        Current location: ${location}
-    </p> 
-       
-    </p>
-</div>
-</div>
+        <div class="maincontainer">
+        <div class="thecard">
+        
+        
+        <div class="thefront">
+            <img src="${urlImage}" alt="image" class="card-image" />
+            
+                <h3 class="card-title">${name}</h3></div>
+        
+        
+        <div class="theback">
+            <p class="card-description">
+                Status: ${status}
+                   Specie: ${specie}
+                   Origin: ${origin}
+                   Current location: ${location}
+            </p></div>
+        
+            </div>
+        </div>
         `
     )
 };

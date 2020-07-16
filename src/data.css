@@ -67,8 +67,8 @@ select option {
 .card {
   border: 3px solid #11b0c8;
   border-radius: 1.5%;
-  
 }
+
 .card-content {
   padding: 1rem;
 }
@@ -77,34 +77,117 @@ select option {
   margin-top: 5%;
 }
 
+/*flip*/
 
-/*flipcard
 
-.card{
-  position: relative;
-  transition:300ms;
-  transform-style: preserve-3d;
-
-}
-
-.card .card-front, .card .card-back{
+.maincontainer{
   position: absolute;
+  width: 250px;
+  height: 320px;
+  background: none;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+}
+
+.thecard{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+
+
+.thecard:hover{
+  transform: rotateY(180deg);
+}
+
+
+ .thefront{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
   backface-visibility: hidden;
+  overflow: hidden;
+  background:  #11b0c8;
+  color: white;
+}
+
+.theback{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  background: #fafafa;
+  color: black;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+
+.thefront h1, .theback h1{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  text-align: center;
+}
+
+.thefront p, .theback p{
+  font-family: 'zilla slab', sans-serif;
+  padding: 30px;
+  font-weight: normal;
+  font-size: 18px;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*efecto zoom*/
+
+.card {
+  -webkit-transform: scale(1,1);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 50ms;
+  -moz-transform: scale(1,1);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 250ms;
 
 }
 
-.card .card-back {
-  transform: rotateY(180sdeg);
+.card:hover {
+  -webkit-transform: scale(1.12,1.12);
+  -webkit-transition-timing-function: ease-out;
+  -webkit-transition-duration: 100ms;
+  -moz-transform: scale(1.12,1.12);
+  -moz-transition-timing-function: ease-out;
+  -moz-transition-duration: 100ms;
 
 }
-
-
-
-.flipBox:hover ,.flipBoxInner{
-  transform: rotateY(180sdeg);
-}
-
-
 
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
