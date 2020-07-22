@@ -14,10 +14,10 @@
 
 </head>
 
-<body>
-<!-- DATA -->
+<body background="images/background.jpeg" class="background">
+    <!-- DATA -->
 
-<script src="./data/rickandmorty/rickandmorty.js"></script>
+    <script src="./data/rickandmorty/rickandmorty.js"></script>
 
 
     <header>
@@ -36,38 +36,41 @@
     </header>
 
 
+
     <div class="container">
         <div class="section">
             <h1>Characters</h1>
         </div>
 
 
+
         <section class="filters margin-b-1 margin-t-1">
             <div class="search-input margin-b-1">
-                <input type="search" class="site-search color" id="searchIn"name="q">
+                <input type="search" class="site-search color" id="searchIn" name="q">
                 <button class="button search" id="searchButton">
                     <i class="fas fa-search"></i>
                 </button>
             </div>
 
-            
-            <select class="filter-input color margin-b-1 order">
-                <option value="order" class="order">Order</option>
+
+            <select class="filter-input color margin-b-1 order" id="filter-input-order">
+                <option value="" hidden default disabled selected class="order">Order</option>
                 <option value="a-z" class="order">Order A-Z</option>
                 <option value="z-a" class="order">Order Z-A</option>
             </select>
-            <select class="filter-input color margin-b-1 order">
-                <option value="species">Species</option>
-                <option value="species.Human">Humans</option>
-                <option value="species.Vampire">Vampire</option>
-                <option value="species.Disease">Disease</option>
-                <option value="species.unknown">Unknown</option>
-                <option value="species.Animal">Animal</option>
-                <option value="species.Robot">Robot</option>
-                <option value="species.Humanoid">Humanoid</option>
-                <option value="species.Alien">Alien</option>
-                <option value="species.Cronenberg">Cronenberg</option>
-                <option value="species.Poopybutthole">Poopybutthole</option>
+            <select class="filter-input color margin-b-1 order" id="filter-input-species">
+                <option value="" selected default hidden disabled>Species</option>
+                <option value="">All</option>
+                <option value="Human">Humans</option>
+                <option value="Vampire">Vampire</option>
+                <option value="Disease">Disease</option>
+                <option value="unknown">Unknown</option>
+                <option value="Animal">Animal</option>
+                <option value="Robot">Robot</option>
+                <option value="Humanoid">Humanoid</option>
+                <option value="Alien">Alien</option>
+                <option value="Cronenberg">Cronenberg</option>
+                <option value="Poopybutthole">Poopybutthole</option>
             </select>
         </section>
 
@@ -79,18 +82,18 @@
         </div>
     </div>
     <footer class="footer">
-     <div id="boxblack">
-        <p class="text-f margin-t-1">Made wit love by Daniela Romero and Angélica Bonilla, @ All rights reserved.</p> 
-        <div class="Icons-socialMedia">
-            <a href="https://twitter.com/RickandMorty"> <i class="text-color fab fa-twitter-square"></i></a>
-            <a href="https://www.facebook.com/RickandMorty/"> <i class="text-color fab fa-facebook-square"></i></a>
-            <a href="https://www.instagram.com/rickandmorty/"> <i class="text-color fab fa-instagram-square"></i></a>                    
-        <div class="backTop-icon" id="backTop-button">
-            <i class="fas fa-arrow-circle-up"></i>
-        </div>
+        <div id="boxblack">
+            <p class="text-f margin-t-1">Made with love by Daniela Romero and Angélica Bonilla, @ All rights reserved.
+            </p>
+            <div class="Icons-socialMedia">
+                <a href="https://twitter.com/RickandMorty"> <i class="text-color fab fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/RickandMorty/"> <i class="text-color fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/rickandmorty/"> <i
+                        class="text-color fab fa-instagram-square"></i></a>
+                <div class="backTop-icon" id="backTop-button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
     </footer>
-
-    <script src="data.js" type="module"></script>
     <script src="main.js" type="module"></script>
 </body>
 

@@ -1,185 +1,172 @@
+.background {
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-image: linear-gradient(rgba(247, 241, 241, 0.7), rgba(247, 241, 241, 0.7)), url(images/background.jpeg);
+  }
+
 .section {
-  padding: 15px;
-  color: #11b0c8;
-  display: flex;
-  justify-content: center;
+padding: 3rem;
+color: #11b0c8;
+display: flex;
+justify-content: center;
+}
+.section > h1 {
+font-size: 2.5rem;
 }
 
 .search-input {
-  display: flex;
-  align-items: stretch;
-  justify-content: center;
+display: flex;
+align-items: stretch;
+justify-content: center;
 }
 
 .site-search {
-  font-size: 1rem;
-  padding: 0.5rem 1rem;
-  border-radius: 5px 0 0 5px;
-  flex: 1;
+font-size: 1rem;
+padding: 0.5rem 1rem;
+border-radius: 5px 0 0 5px;
+flex: 1;
 }
 
 .button.search {
-  border-radius: 0 5px 5px 0;
-  width: 3rem;
-  height: 3rem;
-  padding: 0.3rem;
+border-radius: 0 5px 5px 0;
+width: 3rem;
+height: 3rem;
+padding: 0.3rem;
 }
 
 select {
-  font-size: 1rem;
-  padding: 0.5rem 2rem;
+font-size: 1rem;
+padding: 0.5rem 2rem;
 }
 
 select option {
-  font-size: 1em;
+font-size: 1em;
 }
 
 .filters {
-  display: flex;
-  width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  justify-content: space-around;
-  flex-direction: column;
+display: flex;
+width: 100%;
+padding-left: 1rem;
+padding-right: 1rem;
+justify-content: space-around;
+flex-direction: column;
 }
 
+.section > h1 {
+  margin-top: 100px;
+}
 /* Cards Styles */
 
 .grid {
-  display: flex;
-  flex-wrap: wrap;
- }
+display: flex;
+flex-wrap: wrap;
+}
 
 .grid > * {
-  flex: 1 1 100%;
-  padding: 1rem;
+flex: 1 1 100%;
+padding: 1rem;
 }
 
-.maincontainer {
-  display: flex;
+.column {
+display: flex;
 }
 
-.maincontainer > * {
-  width: 100%;
-  
+.column > * {
+width: 100%;
+}
+/*Flip cards */
+.card {
+transform: scale(1, 1);
+transition: transform 0.3s;
 }
 
-/*flipcard*/
-
-.loading-indicator {
-  margin-top: 350px;
+.card:hover {
+transform: scale(1.1, 1.1);
 }
 
-#characters-container.grid {
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  display: relative;
+.card .card-container {
+border: 3px solid #11b0c8;
+border-radius: 1.5%;
 }
 
-.maincontainer{
-  width: 300%;
-  height: 320px;
-  background: none;
-  top: 50%;
-  left: 50%;
-  padding: 60px;
+.card .card-content {
+padding: 1rem;
+}
+
+.card .card-title {
+margin-top: 5%;
+}
+
+.card.flip {
+cursor: pointer;
+perspective: 1000px;
+}
+
+.card.flip .card-container {
+position: relative;
+width: 100%;
+height: 100%;
+transition: transform 0.6s;
+transform-style: preserve-3d;
+background: white;
+}
+
+.card.flip:hover .card-container {
+transform: rotateY(180deg);
+}
+
+.card.flip .card-front,
+.card.flip .card-back {
+-webkit-backface-visibility: hidden;
+backface-visibility: hidden;
+}
+
+.card.flip .card-back {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+transform: rotateY(180deg);
+display: flex;
+justify-content: center;
+align-items: center;
+
 
 }
 
-.thecard{
-  position: relative;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  transform-style: preserve-3d;
-  transition: all 0.8s ease;
+.order {
+background-color: #d6f2f7 ;
+;
 }
 
-
-.thecard:hover{
-  transform: rotateY(180deg);
+.conv-icon {
+text-align: left;
 }
 
+/*Character´s name*/
 
- .thefront{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 140%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background:  #11b0c8;
-  color: white;
-  
-}
-
-.theback{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 10px;
-  backface-visibility: hidden;
-  overflow: hidden;
-  background: #fafafa;
-  color: black;
-  text-align: center;
-  transform: rotateY(180deg);
-}
-
-
-.thefront h3, .theback p{
-  font-weight: bold;
-  font-size: 20px;
-  text-align: center;
-  
-}
-
-.thefront p, .theback p{
-  
-  padding: 15px;
-  font-weight: normal;
-  font-size: 15px;
-  text-align: center;
+h3 {
+font-size: 1.3rem;
 }
 
 /*Tablet--------------------*/
 @media screen and (min-width: 768px) {
-  .filters {
-    flex-direction: row;
-  }
+.filters {
+  flex-direction: row;
+}
 
-  .grid > * {
-    flex: 1 1 50%;
-    max-width: 50%;
-  }
-
-  .thefront {
-    width: 200px;
-    height: 250px;
-  }
-
+.grid > * {
+  flex: 1 1 50%;
+  max-width: 50%;
+}
 }
 
 /* Desktop---------------------- */
 @media screen and (min-width: 1127px) {
-  .grid > * {
-    flex: 1 1 25%;
-    max-width: 25%;
-  }
-
-  .maincontainer {
-    padding: 20px;
-
-  }
-
-  .thefront{
-    width: 100%;
-    height: 110%;
+.grid > * {
+  flex: 1 1 25%;
+  max-width: 25%;
+}
 }
