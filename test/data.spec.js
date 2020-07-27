@@ -1,23 +1,83 @@
-import { example, anotherExample } from '../src/data.js';
+import { example, anotherExample, sortAlphabetic } from '../src/data.js';
 
+describe('sortAlphabetic()', () => {
+  const mockCharactersList = [
+    {
+      name: 'Rick'
+    },
+    {
+      name: 'A Rick'
+    },
+    {
+      name: 'Morty'
+    }];
 
-describe('example', () => {
-  it('is a function', () => {
-    expect(typeof example).toBe('function');
+  it('Should return the list without modification if order param is empty', () => {
+    const sortedList = sortAlphabetic('', mockCharactersList);
+    expect(sortedList).toEqual(mockCharactersList);
   });
 
-  it('returns `example`', () => {
-    expect(example()).toBe('example');
+  it('Should return the list ordered from a to z', () => {
+    const sortedList = sortAlphabetic('a-z', mockCharactersList);
+    expect(sortedList).toEqual([
+      {
+        name: 'A Rick'
+      },
+      {
+        name: 'Morty'
+      },
+      {
+        name: 'Rick'
+      }
+    ]);
   });
-});
 
-
-describe('anotherExample', () => {
-  it('is a function', () => {
-    expect(typeof anotherExample).toBe('function');
+  it('Should return the list ordered from z to a', () => {
+    const sortedList = sortAlphabetic('z-a', mockCharactersList);
+    expect(sortedList).toEqual([
+      {
+        name: 'Rick'
+      },
+      {
+        name: 'Morty'
+      },
+      {
+        name: 'A Rick'
+      }
+    ]);
   });
 
-  it('returns `anotherExample`', () => {
-    expect(anotherExample()).toBe('OMG');
+  it('Should return the list without modification when there are equal names', () => {
+    const equalMockCharactersList = [
+      {
+        name: 'Rick'
+      },
+      {
+        name: 'Summer'
+      },
+      {
+        name: 'Morty'
+      },
+      {
+        name: 'Summer'
+      }
+    ]
+
+    const sortedList = sortAlphabetic('a-z', equalMockCharactersList);
+    expect(sortedList).toEqual([
+      {
+        name: 'Morty'
+      },
+      {
+        name: 'Rick'
+      },
+      {
+        name: 'Summer'
+      },
+      {
+        name: 'Summer'
+      }
+    ]);
   });
+
 });
