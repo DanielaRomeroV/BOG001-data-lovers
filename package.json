@@ -10,7 +10,7 @@
     "open-coverage-report": "opener ./coverage/lcov-report/index.html",
     "start": "serve src/",
     "deploy": "gh-pages -d src"
-  },
+      },
   "dependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "gh-pages": "^2.1.1",
@@ -24,5 +24,5 @@
     "@babel/preset-env": "^7.10.4",
     "babel-jest": "^24.9.0",
     "eslint": "^5.16.0"
-  }
+     }
 }
