@@ -1,4 +1,4 @@
-import { example, anotherExample, sortAlphabetic } from '../src/data.js';
+import { sortAlphabetic } from '../src/data.js';
 
 describe('sortAlphabetic()', () => {
   const mockCharactersList = [

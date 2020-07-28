@@ -44,6 +44,9 @@ select option {
   padding-right: 1rem;
   justify-content: space-around;
   flex-direction: column;
+  margin: auto;
+  max-width: 1400px;
+
 }
 
 .section > h1 {
@@ -133,6 +136,10 @@ select option {
 
 .conv-icon {
   text-align: left;
+}
+#characters-container{
+  margin: auto;
+  max-width: 1200px;
 }
 
 /*Character´s name*/

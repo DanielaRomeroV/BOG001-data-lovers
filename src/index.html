@@ -34,73 +34,83 @@
     </section>
 
     <!--FunFacts-->
-          <div class="funFacts">
-            <div class="title"><h1>Fun Facts</h1></div>
+    <div class="funFacts">
+        <div class="title">
+            <h1>Fun Facts</h1>
         </div>
+    </div>
 
-            <!--slider-->
-            <section class="slider">
-                <div class="slide-contenedor">
-                    <div class="Slider fade">
-                        <h1>The Network Was Right This Time</h1>
-                        <img src="images/1.jpg">
-                        <p>Typically when fans learn of instances in which TV networks force creators to make major
-                            changes to their show, it comes across like a negative thing. On the other end of the
-                            spectrum, Adult Swim insisting that Rick and Morty be a half-hour show, instead of each
-                            episode lasting eleven minutes as Justin Roiland wanted, was brilliant. </p>
-                    </div>
-                    <div class="Slider fade">
-                        <h1>One Of The Show’s Most Popular Episodes Was Inspired By Something Surprising</h1>
-                        <img src="images/2.jpg">
-                        <p>During the episode “Total Rickall”, Rick and Morty’s main characters struggle to figure
-                            out what is real and fake as their home is infested with a slew of outrageous new
-                            characters. As it turns out, that episode was written because Dan Harmon and Justin
-                            Roiland were amazed when Buffy the Vampire Slayer’s main character suddenly had a sister
-                            that everyone just accepted </p>
-                    </div>
-                    <div class="Slider fade">
-                        <h1>Rick’s Trademark Burping Wasn’t Planned</h1>
-                        <img src="images/3.jpg">
-                        <p>While working on a short film that was a precursor to Rick and Morty, series co-creator
-                            and voice contributor Justin Roiland burped in the middle of delivering a line. Amused
-                            by the moment, he went on to force himself to burp while he recorded many other lines of
-                            dialogue for that character. Happy with the results, he has continued the practice off
-                            and on since he began voicing Rick.</p>
-                    </div>
-
-                    <div class="Slider fade">
-                        <h1>The Show’s Pilot Was Written Very Quickly</h1>
-                        <img src="images/4.jpg">
-                        <p>Largely due to the fact that each episode of Rick and Morty is densely packed with story,
-                            references, jokes, and set up for future moments, the show’s writers tend to work on
-                            them for a long time. On the other hand, when Dan Harmon and Justin Roiland wrote the
-                            script for the show’s pilot they completed it in only six hours.</p>
-                    </div>
-                    <div class="barras">
-                        <span class="barra active" onclick="posicionSlide(1)"></span>
-                        <span class="barra" onclick="posicionSlide(2)"></span>
-                        <span class="barra" onclick="posicionSlide(3)"></span>
-                        <span class="barra" onclick="posicionSlide(4)"></span>
-                    </div>
-            </section>
-            <div class="Character-row">
-                <button class="button" type="Character"><a href="characters.html">Characters</a></button>
+    <!--slider-->
+    <section class="slider">
+        <div class="slide-contenedor">
+            <div class="Slider fade">
+                <h1>The Network Was Right This Time</h1>
+                <img src="images/1.jpg">
+                <p>Typically when fans learn of instances in which TV networks force creators to make major
+                    changes to their show, it comes across like a negative thing. On the other end of the
+                    spectrum, Adult Swim insisting that Rick and Morty be a half-hour show, instead of each
+                    episode lasting eleven minutes as Justin Roiland wanted, was brilliant. </p>
+            </div>
+            <div class="Slider fade">
+                <h1>One Of The Show’s Most Popular Episodes Was Inspired By Something Surprising</h1>
+                <img src="images/2.jpg">
+                <p>During the episode “Total Rickall”, Rick and Morty’s main characters struggle to figure
+                    out what is real and fake as their home is infested with a slew of outrageous new
+                    characters. As it turns out, that episode was written because Dan Harmon and Justin
+                    Roiland were amazed when Buffy the Vampire Slayer’s main character suddenly had a sister
+                    that everyone just accepted </p>
+            </div>
+            <div class="Slider fade">
+                <h1>Rick’s Trademark Burping Wasn’t Planned</h1>
+                <img src="images/3.jpg">
+                <p>While working on a short film that was a precursor to Rick and Morty, series co-creator
+                    and voice contributor Justin Roiland burped in the middle of delivering a line. Amused
+                    by the moment, he went on to force himself to burp while he recorded many other lines of
+                    dialogue for that character. Happy with the results, he has continued the practice off
+                    and on since he began voicing Rick.</p>
             </div>
 
-            <footer class="footer">
-                <div id="boxblack">
-                    <p class="text-f margin-t-1">Made with love by Daniela Romero and Angélica Bonilla, @ All rights
-                        reserved. </p>
-                    <div class="Icons-socialMedia">
-                        <a href="https://twitter.com/RickandMorty"> <i class="text-color fab fa-twitter-square"></i></a>
-                        <a href="https://www.facebook.com/RickandMorty/"> <i
-                                class="text-color fab fa-facebook-square"></i></a>
-                        <a href="https://www.instagram.com/rickandmorty/"> <i
-                                class="text-color fab fa-instagram-square"></i></a>
-            </footer>
+            <div class="Slider fade">
+                <h1>The Show’s Pilot Was Written Very Quickly</h1>
+                <img src="images/4.jpg">
+                <p>Largely due to the fact that each episode of Rick and Morty is densely packed with story,
+                    references, jokes, and set up for future moments, the show’s writers tend to work on
+                    them for a long time. On the other hand, when Dan Harmon and Justin Roiland wrote the
+                    script for the show’s pilot they completed it in only six hours.</p>
+            </div>
+            <div class="barras">
+                <span class="barra active" onclick="posicionSlide(1)"></span>
+                <span class="barra" onclick="posicionSlide(2)"></span>
+                <span class="barra" onclick="posicionSlide(3)"></span>
+                <span class="barra" onclick="posicionSlide(4)"></span>
+            </div>
+    </section>
+    <div class="Character-row">
+        <button class="button" type="Character"><a href="characters.html">Characters</a></button>
+    </div>
 
-            <script src="main.js" type="module"></script>
+    <div class="myChart">
+        <h2>ABOUT THE SPECIES</h2>
+        <p>The number of champions per rol</p>
+        <canvas id="myChart" width="200" height="200"></canvas>
+    </div>
 
+    <footer class="footer">
+        <div id="boxblack">
+            <p class="text-f margin-t-1">Made with love by Daniela Romero and Angélica Bonilla, @ All rights reserved.
+            </p>
+            <div class="Icons-socialMedia">
+                <a href="https://twitter.com/RickandMorty"> <i class="text-color fab fa-twitter-square"></i></a>
+                <a href="https://www.facebook.com/RickandMorty/"> <i class="text-color fab fa-facebook-square"></i></a>
+                <a href="https://www.instagram.com/rickandmorty/"> <i
+                        class="text-color fab fa-instagram-square"></i></a>
+                <div class="backTop-icon" id="backTop-button">
+                    <i class="fas fa-arrow-circle-up"></i>
+                </div>
+    </footer>
+
+    <script src="main.js" type="module"></script>
+    <script src="slider.js" type="module"></script>
 </body>
 
 </html>
