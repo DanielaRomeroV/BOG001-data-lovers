@@ -8,7 +8,7 @@
 }
 
 .margin-b-1 {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 .margin-b-2 {
@@ -198,11 +198,11 @@ header {
 }
 
 .slide-contenedor{  
-  max-width: 300px;
   margin: auto;
   text-align: center;
   padding: 30px;
   background: white;
+  border-radius: 3%;
 }
 
 .slide-contenedor p {

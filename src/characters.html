@@ -15,10 +15,6 @@
 </head>
 
 <body class="background">
-    <!-- DATA -->
-
-    <script src="./data/rickandmorty/rickandmorty.js"></script>
-
 
     <header>
         <div class="main-nav">
@@ -41,12 +37,9 @@
         <div class="section">
             <h1>Characters</h1>
         </div>
-
-
-
         <section class="filters margin-b-1 margin-t-1">
             <div class="search-input margin-b-1">
-                <input type="search" class="site-search color" id="searchIn" name="q">
+                <input type="search" class="site-search color" id="searchIn" name="q" placeholder="Search">
                 <button class="button search" id="searchButton">
                     <i class="fas fa-search"></i>
                 </button>
@@ -78,7 +71,7 @@
 
         </section>
         <div class="loading-indicator">
-            <i class="fas fa-spinner Icon-size"></i> LOADING 
+            <i class="fas fa-spinner Icon-size"></i> LOADING
         </div>
     </div>
     <footer class="footer">
@@ -95,6 +88,7 @@
                 </div>
     </footer>
     <script src="main.js" type="module"></script>
+    <script src="characters.js" type="module"></script>
 </body>
 
 </html>

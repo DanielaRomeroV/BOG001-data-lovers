@@ -44,6 +44,9 @@ select option {
   padding-right: 1rem;
   justify-content: space-around;
   flex-direction: column;
+  margin: auto;
+  max-width: 1400px;
+
 }
 
 .section > h1 {
@@ -126,6 +129,11 @@ select option {
   justify-content: center;
   align-items: center;
 }
+.myChart{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .order {
   background-color: #d6f2f7;
@@ -133,6 +141,10 @@ select option {
 
 .conv-icon {
   text-align: left;
+}
+#characters-container{
+  margin: auto;
+  max-width: 1200px;
 }
 
 /*Character´s name*/
