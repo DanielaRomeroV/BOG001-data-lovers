@@ -15,6 +15,7 @@ function toggleMenu() {
     menuOpened = !menuOpened;
 }
 
+//funcion que oculta el menu
 window.addEventListener('click', (event) => {
     if (menuOpened && !mainMenu.contains(event.target) && !buttonMenu.contains(event.target)) {
         mainMenu.classList.remove('active');
@@ -24,10 +25,9 @@ window.addEventListener('click', (event) => {
 
 /*Scroll to the top */
 const backToTopButton = document.querySelector('#backTop-button');
-if (backToTopButton) {
+
     backToTopButton.addEventListener("click", () => {
         // Cada vez que hacemos click al botón Back To Top se lleva al usuario al principio de la pagina
 
         window.scrollTo(0, 0);
     });
-}

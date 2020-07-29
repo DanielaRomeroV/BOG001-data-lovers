@@ -102,7 +102,7 @@ function getDocumentHeight() {
     const body = document.body; // Obtener todo el body del documento
     const html = document.documentElement; // Obtener todo el documento html
 
-    // Math.max retorna el mayor numero dada una lista de numeros
+    // Math.max retorna el mayor numero dada una lista de numeros- lanza el numero mayor 
     return Math.max(
         body.scrollHeight, body.offsetHeight,
         html.clientHeight, html.scrollHeight, html.offsetHeight

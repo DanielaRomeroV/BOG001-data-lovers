@@ -1,15 +1,16 @@
 //funcion slider//
 //funcion slider automatico//
-let indice = 1;
+let indice = 1;//Indice hace referencia a la posición del slide a mostrar
 muestraSlides(indice);
 
 setInterval(function tiempo() {
     muestraSlides(indice += 1)
 }, 8000);
+
 function muestraSlides(n) {
     let i;
     let slides = document.getElementsByClassName('Slider');
-    let barras = document.getElementsByClassName('barra');
+    
 
     if (n > slides.length) {
         indice = 1;
@@ -20,10 +21,9 @@ function muestraSlides(n) {
     for (i = 0; i < slides.length; i++) {
         slides[i].style.display = 'none';
     }
-    for (i = 0; i < barras.length; i++) {
-        barras[i].className = barras[i].className.replace(" active", "");
-    }
+    
 
     slides[indice - 1].style.display = 'block';
-    barras[indice - 1].className += ' active';
+    
 }
+
