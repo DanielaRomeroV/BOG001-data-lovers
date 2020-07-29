@@ -144,10 +144,10 @@ usuario necesita.
 ### DOM y Web APIs
 
 * [x] Uso de selectores del DOM.
-* [ ] Manejo de eventos del DOM.
+* [x] Manejo de eventos del DOM.
 * [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 (appendChild | createTextNode|createElement etc.)
-* [x] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
+* [ ] [Manipulación dinámica del DOM.](https://developer.mozilla.org/es/docs/Referencia_DOM_de_Gecko/Introducci%C3%B3n)
 ( innerHTML | textContent | etc.)
 
 
@@ -155,13 +155,13 @@ usuario necesita.
 
 * [x] Uso de condicionales (if-else | switch | pendiente operador ternario)
 * [x] Uso de bucles (for | for..in | for..of | while)
-* [ ] Uso de funciones (parámetros | argumentos | valor de retorno) pendiente parametro y argumento
-* [ ] Manipular arrays (filter | map | sort | reduce) reconstruir funciones para utilizarlas 
+* [x] Uso de funciones (parámetros | argumentos | valor de retorno) 
+* [ ] Manipular arrays (filter | map | sort | reduce) 
 * [x] Manipular objects (key | value)
-* [ ] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
+* [x] Uso ES modules ([`import`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import)
 | [`export`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export))
-* [x] Diferenciar entre expression y statements.
-* [ ] Diferenciar entre tipos de datos atómicos y estructurados.
+* [ ] Diferenciar entre expression y statements.
+* [x] Diferenciar entre tipos de datos atómicos y estructurados.
 
 ### Testing
 
@@ -169,9 +169,9 @@ usuario necesita.
 
 ### Estructura del código y guía de estilo
 
-* [ ] Organizar y dividir el código en módulos (Modularización)
-* [ ] Uso de identificadores descriptivos (Nomenclatura | Semántica)
-* [ ] Uso de linter (ESLINT)
+* [x] Organizar y dividir el código en módulos (Modularización)
+* [x] Uso de identificadores descriptivos (Nomenclatura | Semántica)
+* [x] Uso de linter (ESLINT)
 
 ### Git y GitHub
 
