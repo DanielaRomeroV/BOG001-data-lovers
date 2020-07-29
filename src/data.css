@@ -129,6 +129,11 @@ select option {
   justify-content: center;
   align-items: center;
 }
+.myChart{
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
 
 .order {
   background-color: #d6f2f7;
